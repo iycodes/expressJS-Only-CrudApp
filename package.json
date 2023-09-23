@@ -1,0 +1,41 @@
+{
+  "name": "fruits_api",
+  "version": "1.0.0",
+  "description": "crud api that return data as html, basically a server only rendered  basic crud app",
+  "main": "index.js",
+  "dependencies": {
+    "@prisma/client": "^5.3.1",
+    "@types/statuses": "^2.0.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^7.0.0",
+    "http-errors": "^2.0.0",
+    "statuses": "^2.0.1",
+    "winston": "^3.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon  src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iycodes/fruits_api.git"
+  },
+  "author": "iycodes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iycodes/fruits_api/issues"
+  },
+  "homepage": "https://github.com/iycodes/fruits_api#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.6.3",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "prisma": {
+    "seed": "ts-node --transpile-only prisma/seed.ts"
+  }
+}

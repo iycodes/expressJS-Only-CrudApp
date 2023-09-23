@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="../domMod.js"> </script>
+
+    <script src="./domMod.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="aFruitWrapper">
+        <div>
+            <span>Genus</span> <span>Something</span>
+        </div>
+        <div>
+            <span>Genus</span> <span>Something</span>
+        </div>
+        <div>
+            <span>Genus</span> <span>Something</span>
+        </div>
+        <div>
+            <span>Genus</span> <span>Something</span>
+        </div>
+        <div>
+            <span>Genus</span> <span>Something</span>
+        </div>
+        <div class="nutritionWrapper">
+            <div> Nutritions</div>
+            <div class="nutt">
+                <div> <span>carbohydrates</span> <span>value</span> </div>
+                <div> <span>carbohydrates</span> <span>value</span> </div>
+                <div> <span>carbohydrates</span> <span>value</span> </div>
+                <div> <span>carbohydrates</span> <span>value</span> </div>
+                <div> <span>carbohydrates</span> <span>value</span> </div>
+            </div>
+
+        </div>
+        <div class="btns">
+            <button id="editFruitBtn">Edit</button>
+            <button data-fruitid="5" id="delBtn"> Delete </button>
+        </div>
+        <button>
+            <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+        <div id="aFruitStatus">
+        </div>
+    </div>
+
+
+    <div class="aFruitWrapper" style="display: none;">
+        <form id="aFruitForm">
+            <div>
+                <label for="">
+                    Genus
+                    <input id="input1" value="1" class="aFruitFormInput" type="text">
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    Genus
+                    <input value="2" class="aFruitFormInput" type="text">
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    Genus
+                    <input value="3" class="aFruitFormInput" type="text">
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    Genus
+                    <input value="4" class="aFruitFormInput" type="text">
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    Genus
+                    <input value="5" class="aFruitFormInput" type="text">
+                </label>
+            </div>
+            <div>
+                <div>Nutritions</div>
+                <div>
+                    <label for="">
+                        carbohydrates
+                        <input value="6" class="aFruitFormInput" type="text">
+                    </label>
+                </div>
+                <div>
+                    <label for="">
+                        carbohydrates
+                        <input value="7" class="aFruitFormInput" type="text">
+                    </label>
+                </div>
+                <div>
+                    <label for="">
+                        carbohydrates
+                        <input value="8" class="aFruitFormInput" type="text">
+                    </label>
+                </div>
+                <div>
+                    <label for="">
+                        carbohydrates
+                        <input value="90" class="aFruitFormInput" type="text">
+                    </label>
+                </div>
+                <div>
+                    <label for="">
+                        carbohydrates
+                        <input value="10" class="aFruitFormInput" type="text">
+                    </label>
+                </div>
+            </div>
+            <button type="submit" id="formSubmitBtn">Submit</button>
+        </form>
+        <div id="formStatus"></div>
+    </div>
+</body>
+
+</html>

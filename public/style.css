@@ -1,0 +1,150 @@
+:root {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: fit-content;
+}
+body{
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px; */
+    /* justify-content: space-between; */
+    /* align-content: space-evenly; */
+}
+.allFruitsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-content: space-between; */
+    /* align-content: space-evenly; */
+}
+button {
+    cursor: pointer;
+}
+.aFruitWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+.aFruitWrapper > .btns {
+    display: flex;
+    gap: 7px;
+    
+}
+.aFruitWrapper > .btns:first-child{
+    color: Blue ;
+}
+.aFruitWrapper >.btns> button {
+flex-grow: 1;
+border-radius: 5px;
+border: none;
+width: auto;
+padding: 5px 0;
+/* color:red; */
+display: flex;
+align-items: center;
+justify-content: center;
+padding:  10px;
+}
+.btns:first-child{
+    color: Blue ;
+}
+.nutritionWrapper {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* padding: 0.3rem; */
+
+}
+/* .nutritionWrapper:first-child{
+    margin-bottom: 0.5rem;
+} */
+.nutritionWrapper >.nutt {
+    padding:0.1rem 0.4rem
+}
+.status{
+/* color: green; */
+}
+.errText {
+    color: red;
+}
+
+#aFruitForm {
+
+    display: flex;
+    flex-direction: column;
+}
+#aFruitForm input {
+    width: 50px;
+}
+#aFruitForm > button {
+    margin-top: 1rem;
+}
+
+#formStatus{
+    color: green;
+}
+
+
+
+/* loader */
+.loader {
+    display: inline-block;
+    position: relative;
+    /* width: 80px;
+    height: 80px; */
+    scale:0.5 ;
+    left: -15%;
+    top:-3px;
+    /* top: 50%; */
+  }
+  .loader div {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .loader div:nth-child(1) {
+    left: 8px;
+    animation: loader1 0.6s infinite;
+  }
+  .loader div:nth-child(2) {
+    left: 8px;
+    animation: loader2 0.6s infinite;
+  }
+  .loader div:nth-child(3) {
+    left: 32px;
+    animation: loader2 0.6s infinite;
+  }
+  .loader div:nth-child(4) {
+    left: 56px;
+    animation: loader3 0.6s infinite;
+  }
+  @keyframes loader1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes loader3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes loader2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  

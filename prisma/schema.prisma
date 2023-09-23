@@ -1,0 +1,27 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model fruit {
+    id         Int         @id
+    genus      String
+    name       String      @unique
+    family     String
+    order      String
+    nutritions nutritions?
+}
+
+model nutritions {
+    fruit         fruit @relation(fields: [fruitId], references: [id], onDelete: Cascade)
+    fruitId       Int   @id
+    carbohydrates Float
+    protein       Float
+    fat           Float
+    calories      Int
+    sugar         Float
+}
